@@ -74,3 +74,5 @@ PLLJ_PLLSPE_INFO.txt
 */output_files/
 *.vwf
 cr_ie_info.json
+*.rar
+*.pdf
