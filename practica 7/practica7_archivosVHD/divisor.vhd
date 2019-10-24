@@ -17,8 +17,8 @@ signal div: STD_LOGIC := '0';
 begin
 	process (reloj, div) --Variable sensitiva reloj la declaramos dentro del process
 		--Declaramos la variable cuenta y limite que solo trabajaran en el bloque del proceso
-		variable limite: INTEGER := 15000000;
-		variable cuenta: INTEGER range 0 to 15000000 := 0;
+		variable limite: INTEGER := 50000000;
+		variable cuenta: INTEGER range 0 to 50000000 := 0;
 		begin
 		
 			if rising_edge(reloj) then 

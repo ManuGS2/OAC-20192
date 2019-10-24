@@ -8,7 +8,9 @@ entity ram is
 			data : inout std_logic_vector(7 downto 0);
 			Wn : in std_logic;
 			CSn : in std_logic;
-			address : in std_logic_vector(15 downto 0)
+			address : in std_logic_vector(15 downto 0);
+			suma: out std_logic_vector(7 downto 0);
+			val_i: out std_logic_vector(7 downto 0)
 			);
 end ram;
 
@@ -56,13 +58,15 @@ architecture Behavioral of ram is
 		mem(34) <= X"1B";
 		mem(35) <= X"7E";
 		mem(36) <= X"00";
-		mem(37) <= X"04";
+		mem(37) <= X"04";		
 		
 		
 		if (CSn = '0' and Wn = '0') then
 			mem(conv_integer(unsigned(address))) <= data;
 		end if;
 	end process;
+	suma <= mem(80);  -- x"0050"
+	val_i <= mem(81); -- x"0051"
 
 	TRI_STATE: process (address, CSn, Wn, data_out)
 	begin
