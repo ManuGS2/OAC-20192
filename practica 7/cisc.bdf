@@ -72,7 +72,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 1176 -320 1352 -304)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "leds[7..0]" (rect 5 4 52 16)(font "Arial" ))
+	(text "leds[7..0]" (rect 5 4 51 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2526,28 +2526,6 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 168 96))
 	)
 )
-(symbol
-	(rect 320 -272 448 -192)
-	(text "divisor" (rect 5 0 38 12)(font "Arial" ))
-	(text "divisor" (rect 8 64 41 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
-		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 96 27 107 39)(font "Arial" ))
-		(line (pt 128 32)(pt 112 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 64))
-	)
-)
 (connector
 	(pt 600 -272)
 	(pt 680 -272)
@@ -4272,15 +4250,6 @@ refer to the applicable agreement for further details.
 	(pt 328 -280)
 )
 (connector
-	(pt 296 -240)
-	(pt 320 -240)
-)
-(connector
-	(text "clock" (rect 456 -256 480 -239)(font "Intel Clear" ))
-	(pt 448 -240)
-	(pt 488 -240)
-)
-(connector
 	(pt 1176 -208)
 	(pt 1160 -208)
 )
@@ -4346,6 +4315,21 @@ refer to the applicable agreement for further details.
 	(pt 1104 -240)
 	(pt 1176 -240)
 	(bus)
+)
+(connector
+	(text "i" (rect -216 -264 -214 -247)(font "Intel Clear" ))
+	(pt -176 -248)
+	(pt -224 -248)
+)
+(connector
+	(text "x" (rect -216 -248 -212 -231)(font "Intel Clear" ))
+	(pt -176 -232)
+	(pt -224 -232)
+)
+(connector
+	(text "clock" (rect 456 -256 480 -239)(font "Intel Clear" ))
+	(pt 296 -240)
+	(pt 488 -240)
 )
 (junction (pt 888 -288))
 (junction (pt 872 -272))
