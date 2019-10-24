@@ -580,23 +580,6 @@ refer to the applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
-	(input)
-	(rect -568 160 -552 328)
-	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "data[7..0]" (rect 0 116 12 163)(font "Arial" )(vertical))
-	(pt 8 0)
-	(drawing
-		(line (pt 12 84)(pt 12 59))
-		(line (pt 4 84)(pt 4 59))
-		(line (pt 8 55)(pt 8 0))
-		(line (pt 12 84)(pt 4 84))
-		(line (pt 4 59)(pt 8 55))
-		(line (pt 12 59)(pt 8 55))
-	)
-	(rotate90)
-	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-)
-(pin
 	(output)
 	(rect 496 72 672 88)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -723,6 +706,24 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+)
+(pin
+	(bidir)
+	(rect -568 160 -552 336)
+	(text "BIDIR" (rect 6 1 16 25)(font "Arial" (font_size 6))(vertical))
+	(text "data[7..0]" (rect 8 86 20 133)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 12 56)(pt 12 78))
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 4 56)(pt 4 78))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 4 78)(pt 8 82))
+		(line (pt 12 56)(pt 8 52))
+		(line (pt 8 52)(pt 4 56))
+	)
+	(rotate270)
+	(text "VCC" (rect -1 4 9 24)(font "Arial" (font_size 6))(vertical))
 )
 (symbol
 	(rect 296 32 488 144)
@@ -1820,16 +1821,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -560 24)
-	(pt -560 144)
-	(bus)
-)
-(connector
-	(pt -560 144)
-	(pt -560 160)
-	(bus)
-)
-(connector
 	(pt -120 112)
 	(pt -136 112)
 )
@@ -2194,6 +2185,16 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 904 64)
 	(pt 920 64)
+	(bus)
+)
+(connector
+	(pt -560 24)
+	(pt -560 144)
+	(bus)
+)
+(connector
+	(pt -560 144)
+	(pt -560 160)
 	(bus)
 )
 (junction (pt -248 288))
