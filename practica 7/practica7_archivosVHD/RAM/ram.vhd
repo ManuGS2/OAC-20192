@@ -33,7 +33,7 @@ architecture Behavioral of ram is
 		mem(8) <= x"D6"; -- LDAB #0051 Cargamos el valor de i en B
 		mem(9) <= x"51";
 		mem(10) <= x"86"; -- LDAA #$10 Cargamos 10 (0A) en A 'n'
-		mem(11) <= x"0A";
+		mem(11) <= x"04";
 		mem(12) <= x"11"; -- CBA Comparas A con B (A-B)
 		mem(13) <= x"27"; -- JE Si el resultado es igual a 0
 		mem(14) <= x"1E"; -- x"1E" = 30 decimal

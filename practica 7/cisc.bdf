@@ -2526,6 +2526,28 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 168 96))
 	)
 )
+(symbol
+	(rect 320 -272 448 -192)
+	(text "divisor" (rect 5 0 38 12)(font "Arial" ))
+	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
+		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 96 27 110 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 64))
+	)
+)
 (connector
 	(pt 600 -272)
 	(pt 680 -272)
@@ -4327,9 +4349,13 @@ refer to the applicable agreement for further details.
 	(pt -224 -232)
 )
 (connector
-	(text "clock" (rect 456 -256 480 -239)(font "Intel Clear" ))
+	(text "clock" (rect 472 -256 496 -239)(font "Intel Clear" ))
+	(pt 448 -240)
+	(pt 504 -240)
+)
+(connector
 	(pt 296 -240)
-	(pt 488 -240)
+	(pt 320 -240)
 )
 (junction (pt 888 -288))
 (junction (pt 872 -272))
