@@ -135,9 +135,41 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 440 -248 616 -232)
+	(rect 392 -248 568 -232)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "clk_test" (rect 90 0 128 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 888 600 1064 616)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "z_out" (rect 90 0 115 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1376 -8 1552 8)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "zupa_out" (rect 90 0 133 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -2202,28 +2234,6 @@ refer to the applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 160 -272 288 -192)
-	(text "divisor" (rect 5 0 38 12)(font "Arial" ))
-	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
-		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 96 27 110 39)(font "Arial" ))
-		(line (pt 128 32)(pt 112 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 64))
-	)
-)
-(symbol
 	(rect 472 -432 712 -320)
 	(text "display_decoder" (rect 5 0 85 12)(font "Arial" ))
 	(text "decoder" (rect 8 96 45 113)(font "Intel Clear" ))
@@ -2375,7 +2385,7 @@ refer to the applicable agreement for further details.
 	(rotate180)
 )
 (symbol
-	(rect 360 -256 408 -224)
+	(rect 328 -256 376 -224)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "instnot" (rect 3 21 36 33)(font "Arial" ))
 	(port
@@ -2713,6 +2723,28 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 136 592))
+	)
+)
+(symbol
+	(rect 152 -272 280 -192)
+	(text "divisor" (rect 5 0 38 12)(font "Arial" ))
+	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
+		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 96 27 107 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 64))
 	)
 )
 (connector
@@ -4434,36 +4466,14 @@ refer to the applicable agreement for further details.
 	(pt 112 -400)
 )
 (connector
-	(pt 96 -240)
-	(pt 112 -240)
-)
-(connector
-	(pt 112 -240)
-	(pt 160 -240)
-)
-(connector
 	(text "reset" (rect 154 -192 177 -175)(font "Intel Clear" ))
 	(pt 152 -176)
 	(pt 200 -176)
 )
 (connector
-	(text "clock" (rect 304 -256 328 -239)(font "Intel Clear" ))
-	(pt 288 -240)
-	(pt 360 -240)
-)
-(connector
-	(pt 408 -240)
-	(pt 440 -240)
-)
-(connector
 	(text "v" (rect 856 576 861 593)(font "Intel Clear" ))
 	(pt 848 592)
 	(pt 904 592)
-)
-(connector
-	(text "z" (rect 856 592 860 609)(font "Intel Clear" ))
-	(pt 848 608)
-	(pt 880 608)
 )
 (connector
 	(text "n" (rect 857 608 862 625)(font "Intel Clear" ))
@@ -4627,6 +4637,28 @@ refer to the applicable agreement for further details.
 	(pt 848 1112)
 	(pt 864 1112)
 	(bus)
+)
+(connector
+	(text "z" (rect 864 592 868 609)(font "Intel Clear" ))
+	(pt 848 608)
+	(pt 888 608)
+)
+(connector
+	(pt 96 -240)
+	(pt 112 -240)
+)
+(connector
+	(pt 112 -240)
+	(pt 152 -240)
+)
+(connector
+	(text "clock" (rect 256 -256 280 -239)(font "Intel Clear" ))
+	(pt 280 -240)
+	(pt 328 -240)
+)
+(connector
+	(pt 376 -240)
+	(pt 392 -240)
 )
 (junction (pt 888 -288))
 (junction (pt 872 -272))
