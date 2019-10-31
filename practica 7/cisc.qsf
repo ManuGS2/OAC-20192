@@ -87,7 +87,6 @@ set_location_assignment PIN_B10 -to leds[3]
 set_location_assignment PIN_A10 -to leds[2]
 set_location_assignment PIN_A9 -to leds[1]
 set_location_assignment PIN_A8 -to leds[0]
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VHDL_FILE practica7_archivosVHD/display_decoder.vhd
 set_location_assignment PIN_L19 -to clk_test
 set_location_assignment PIN_C14 -to display1[6]
@@ -113,7 +112,7 @@ set_location_assignment PIN_C22 -to display3[1]
 set_location_assignment PIN_B22 -to display3[0]
 set_location_assignment PIN_B14 -to sw[0]
 set_location_assignment PIN_F15 -to sw[1]
-set_location_assignment PIN_A7 -to speed
 set_location_assignment PIN_B11 -to z_out
 set_location_assignment PIN_A11 -to zupa_out
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

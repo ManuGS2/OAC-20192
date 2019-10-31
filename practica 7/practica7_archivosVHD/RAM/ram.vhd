@@ -24,6 +24,20 @@ architecture Behavioral of ram is
 	-- Memory Write Block
 	MEM_WRITE: process (address, CSn, Wn, data) 
 	begin
+		
+--		mem(0) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
+--		mem(1) <= x"00";
+--		mem(2) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
+--		mem(3) <= x"01";
+--		mem(4) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
+--		mem(5) <= x"00";
+--		mem(6) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
+--		mem(7) <= x"01";
+--		mem(8) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
+--		mem(9) <= x"00";
+--		mem(10) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
+--		mem(11) <= x"01";
+		
 		mem(0) <= x"86"; -- LDAA #$00 Cargamos en A 00 por acceso inmediato
 		mem(1) <= x"00";
 		mem(2) <= x"97"; -- STAA #0050 Cargamos en la dir 50 el contenido de A 'suma'
@@ -35,7 +49,7 @@ architecture Behavioral of ram is
 		mem(8) <= x"D6"; -- LDAB #0051 Cargamos el valor de i en B
 		mem(9) <= x"51";
 		mem(10) <= x"86"; -- LDAA #$10 Cargamos 10 (0A) en A 'n'
-		mem(11) <= x"04";
+		mem(11) <= x"02";
 		mem(12) <= x"11"; -- CBA Comparas A con B (A-B)
 		mem(13) <= x"27"; -- JE Si el resultado es igual a 0
 		mem(14) <= x"1E"; -- x"1E" = 30 decimal
