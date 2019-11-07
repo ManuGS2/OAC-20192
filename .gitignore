@@ -22,13 +22,7 @@
 # or you create an own submodule in the folder to keep binary files out of your
 # design.
 
-# Need to keep all HDL files
-# *.vhd
-# *.v
-
 # ignore Quartus II generated files
-*_generation_script*
-*_inst.vhd
 *.bak
 *.cmp
 *.done
@@ -47,14 +41,7 @@
 *.rpt
 *.smsg
 *.sof
-*.sopc_builder
-*.summary
-*.tcl
 *.txt # Explicitly add any text files used
-*~
-*example*
-*sopc_*
-# *.sdc # I want those timing files
 
 # ignore Quartus II generated folders
 */db/
@@ -72,6 +59,6 @@ _output_files/
 # Gerry
 */output_files/
 *.vwf
-cr_ie_info.json
 *.rar
 *.pdf
+*.zip
