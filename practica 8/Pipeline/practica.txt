@@ -1,0 +1,11 @@
+- Memoria de instrucciones Etapa 1
+- Unidad de Control Etapa 2
+
+LDAA
+LDAB
+ABA 1B
+JMP
+
+NOP Investigar el No operation
+Chacar pag. 210
+

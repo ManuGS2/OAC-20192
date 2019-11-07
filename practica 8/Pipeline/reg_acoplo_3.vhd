@@ -35,7 +35,7 @@ signal selc : STD_LOGIC;
 signal cadj : STD_LOGIC;
 signal selfalgs : STD_LOGIC_VECTOR (3 downto 0);
 signal selbranch : STD_LOGIC_VECTOR (2 downto 0);
-signal vf : STD_LOGIC;
+signal vf : STD_LOGIC := '1';
 signal selregw : STD_LOGIC_VECTOR (2 downto 0);
 signal memw : STD_LOGIC;
 signal seldirw : STD_LOGIC_VECTOR (1 downto 0);
@@ -50,7 +50,7 @@ begin
 			cadj <= '0';
 			selfalgs <= "0000";
 			selbranch <= "000";
-			vf <= '0';
+			vf <= '1';
 			selregw <= "000";
 			memw <= '0';
 			seldirw <= "00";

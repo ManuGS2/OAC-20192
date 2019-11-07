@@ -64,6 +64,13 @@ begin
 			IY <= '0';
 			SP <= '1';
 			AUX <= '0';
+		else
+			ACCA <= '0';
+			ACCB <= '0';
+			IX <= '0';
+			IY <= '0';
+			SP <= '0';
+			AUX <= '0';
 		end if;
 	end process;
 end Behavioral;

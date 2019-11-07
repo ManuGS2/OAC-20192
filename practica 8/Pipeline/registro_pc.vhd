@@ -9,21 +9,15 @@ entity registro_pc is
 end registro_pc;
 
 architecture Behavioral of registro_pc is
-signal valor_interno : std_logic_vector (15 downto 0) := X"0000";
 constant zero : std_logic_vector (15 downto 0) := X"0000";
 
 begin
 	process (RELOJ, RESET, ENTRADA)
 	begin		
 		if RESET = '0' then 
-			valor_interno <= zero;
+			SALIDA <= zero;
 		elsif rising_edge (RELOJ) then
-			valor_interno <= ENTRADA;
+			SALIDA <= ENTRADA;
 		end if;
-	end process;
-	
-	process (valor_interno)
-	begin
-		SALIDA <= valor_interno;
 	end process;
 end Behavioral;

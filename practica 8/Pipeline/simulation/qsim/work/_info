@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/VHDL/Pipeline/simulation/qsim
+vpipeline
+Z0 !s110 1573044366
+!i10b 1
+!s100 C][c<A_8;HTil<eO=KLLH3
+IWg4fYL5;^<czHL?:IU5N72
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/home/julio/Downloads/Pipeline/simulation/qsim
+w1573044365
+8pipeline.vo
+Fpipeline.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1573044366.000000
+!s107 pipeline.vo|
+!s90 -work|work|pipeline.vo|
+!i113 1
+Z5 o-work work
+vpipeline_vlg_vec_tst
+R0
+!i10b 1
+!s100 c@Z7HYEljW`S0U3MS<iAM2
+IoCZGfeEbKY1[Vl7N5h[j32
+R1
+R2
+w1573044359
+8test.vwf.vt
+Ftest.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 test.vwf.vt|
+!s90 -work|work|test.vwf.vt|
+!i113 1
+R5
