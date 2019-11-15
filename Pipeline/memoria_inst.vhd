@@ -27,11 +27,13 @@ architecture Behavioral of memoria_inst is
 		-- memoria(0) <= X"001B0000";
 		memoria(0) <= x"00860000"; -- LDAA #0000
 		memoria(1) <= x"00C60002"; -- LDAB #0002
-		memoria(2) <= x"001B0000"; -- ABA A <= A+B
-		memoria(3) <= x"007E0002"; -- JMP al x"02"
-		memoria(4) <= x"00010000"; -- NOP
-		memoria(5) <= x"00010000"; -- NOP
-		
+		memoria(2) <= x"005C0000"; -- INCB
+		memoria(3) <= x"001B0000"; -- ABA A <= A+B
+		memoria(4) <= x"001B0000"; -- ABA A <= A+B
+		memoria(5) <= x"007E0002"; -- JMP al x"02"
+		memoria(6) <= x"00010000"; -- NOP
+		memoria(7) <= x"00010000"; -- NOP
+		memoria(8) <= x"00010000"; -- NOP
 		
 		
 		-- Funcion de la memoria

@@ -65,6 +65,13 @@ refer to the applicable agreement for further details.
 		(text "SALIDA31[15..0]" (rect 158 59 227 71)(font "Arial" ))
 		(line (pt 248 64)(pt 232 64)(line_width 3))
 	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "SALIDA[31..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "SALIDA[31..0]" (rect 166 75 227 87)(font "Arial" ))
+		(line (pt 248 80)(pt 232 80)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 232 96)(line_width 1))
 	)

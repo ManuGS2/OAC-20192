@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 248 400)
+	(rect 16 16 248 432)
 	(text "etapa2" (rect 5 0 47 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 363 24 380)(font "Intel Clear" ))
+	(text "inst" (rect 8 395 24 412)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -89,15 +89,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 176)
 		(input)
-		(text "int31[15..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
-		(text "int31[15..0]" (rect 21 171 91 190)(font "Intel Clear" (font_size 8)))
+		(text "seldirw[1..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "seldirw[1..0]" (rect 21 171 94 190)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 176)(pt 16 176)(line_width 3))
 	)
 	(port
 		(pt 0 192)
 		(input)
-		(text "seldirw[1..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
-		(text "seldirw[1..0]" (rect 21 187 94 206)(font "Intel Clear" (font_size 8)))
+		(text "int31[15..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
+		(text "int31[15..0]" (rect 21 187 91 206)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 192)(pt 16 192)(line_width 3))
 	)
 	(port
@@ -236,18 +236,25 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 232 336)
 		(output)
-		(text "pcwrite" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
-		(text "pcwrite" (rect 168 331 211 350)(font "Intel Clear" (font_size 8)))
-		(line (pt 232 336)(pt 216 336))
+		(text "selregRout[3..0]" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
+		(text "selregRout[3..0]" (rect 118 331 211 350)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 336)(pt 216 336)(line_width 3))
 	)
 	(port
 		(pt 232 352)
 		(output)
-		(text "ifidwrite" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "ifidwrite" (rect 162 347 211 366)(font "Intel Clear" (font_size 8)))
+		(text "pcwrite" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "pcwrite" (rect 168 347 211 366)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 352)(pt 216 352))
 	)
+	(port
+		(pt 232 368)
+		(output)
+		(text "ifidwrite" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "ifidwrite" (rect 162 363 211 382)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 368)(pt 216 368))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 368))
+		(rectangle (rect 16 16 216 400))
 	)
 )

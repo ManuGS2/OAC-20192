@@ -7,7 +7,8 @@ entity registro_inst is
 			  ENTRADA  : in STD_LOGIC_VECTOR(31 downto 0);
 			  SALIDA15 : out STD_LOGIC_VECTOR(15 downto 0);
 			  SALIDA7 : out STD_LOGIC_VECTOR(7 downto 0);
-			  SALIDA31 : out STD_LOGIC_VECTOR(15 downto 0));
+			  SALIDA31 : out STD_LOGIC_VECTOR(15 downto 0);
+			  SALIDA   : out STD_LOGIC_VECTOR(31 downto 0));
 end registro_inst;
 
 architecture Behavioral of registro_inst is
@@ -29,5 +30,6 @@ begin
 		SALIDA15 <= valor_interno(15 downto 0);
 		SALIDA7 <= valor_interno(7 downto 0);
 		SALIDA31 <= valor_interno(31 downto 16);
+		SALIDA <= valor_interno;
 	end process;
 end Behavioral;

@@ -109,6 +109,26 @@ begin
 			memw <= '0';
 			seldirw <= "00";
 			
+		elsif inst = X"005C" then -- INCB
+			selregr <= X"5";
+			sels1 <= '0';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "001";
+			seldir <= "00";
+			selop <= X"1";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '1';
+			selfalgs <= X"C";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "100";
+			memw <= '0';
+			seldirw <= "00";
+			
 		elsif inst = X"0001" then -- NOP
 			selregr <= X"0";
 			sels1 <= '0';
