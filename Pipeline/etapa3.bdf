@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 80 152 256 168)
+	(rect 200 152 376 168)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "selop[3..0]" (rect 9 0 60 12)(font "Arial" ))
 	(pt 176 8)
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 80 168 256 184)
+	(rect 104 168 280 184)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "op1[15..0]" (rect 9 0 58 12)(font "Arial" ))
 	(pt 176 8)
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 80 184 256 200)
+	(rect 104 184 280 200)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "op2[15..0]" (rect 9 0 58 12)(font "Arial" ))
 	(pt 176 8)
@@ -133,7 +133,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 32 264 208 280)
+	(rect 0 416 176 432)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "selC" (rect 9 0 31 12)(font "Arial" ))
 	(pt 176 8)
@@ -149,7 +149,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 32 296 208 312)
+	(rect 8 448 184 464)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "cadj" (rect 9 0 29 12)(font "Arial" ))
 	(pt 176 8)
@@ -181,7 +181,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 664 560 840 576)
+	(rect 664 576 840 592)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "vf" (rect 9 0 20 12)(font "Arial" ))
 	(pt 176 8)
@@ -258,6 +258,22 @@ refer to the applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -592 208 -424 224)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "SelRegR[3..0]" (rect 5 0 75 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -405,7 +421,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1512 1192 1688 1208)
+	(rect 1608 1192 1784 1208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "selregwo[2..0]" (rect 90 0 158 12)(font "Arial" ))
 	(pt 0 8)
@@ -421,7 +437,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1512 1208 1688 1224)
+	(rect 1568 1208 1744 1224)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "memwo" (rect 90 0 127 12)(font "Arial" ))
 	(pt 0 8)
@@ -437,7 +453,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1512 1224 1688 1240)
+	(rect 1568 1224 1744 1240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "seldirwo[1..0]" (rect 90 0 154 12)(font "Arial" ))
 	(pt 0 8)
@@ -452,7 +468,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 200 240 320 352)
+	(rect 192 392 312 504)
 	(text "mux_1" (rect 5 0 38 12)(font "Arial" ))
 	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
 	(port
@@ -480,7 +496,7 @@ refer to the applicable agreement for further details.
 		(pt 120 32)
 		(output)
 		(text "sal" (rect 0 0 14 12)(font "Arial" ))
-		(text "sal" (rect 88 27 99 39)(font "Arial" ))
+		(text "sal" (rect 88 27 102 39)(font "Arial" ))
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
@@ -523,42 +539,42 @@ refer to the applicable agreement for further details.
 		(pt 184 32)
 		(output)
 		(text "n" (rect 0 0 5 12)(font "Arial" ))
-		(text "n" (rect 159 27 163 39)(font "Arial" ))
+		(text "n" (rect 159 27 164 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32))
 	)
 	(port
 		(pt 184 48)
 		(output)
 		(text "z" (rect 0 0 4 12)(font "Arial" ))
-		(text "z" (rect 160 43 163 55)(font "Arial" ))
+		(text "z" (rect 160 43 164 55)(font "Arial" ))
 		(line (pt 184 48)(pt 168 48))
 	)
 	(port
 		(pt 184 64)
 		(output)
 		(text "v" (rect 0 0 7 12)(font "Arial" ))
-		(text "v" (rect 158 59 163 71)(font "Arial" ))
+		(text "v" (rect 158 59 165 71)(font "Arial" ))
 		(line (pt 184 64)(pt 168 64))
 	)
 	(port
 		(pt 184 80)
 		(output)
 		(text "c" (rect 0 0 5 12)(font "Arial" ))
-		(text "c" (rect 159 75 163 87)(font "Arial" ))
+		(text "c" (rect 159 75 164 87)(font "Arial" ))
 		(line (pt 184 80)(pt 168 80))
 	)
 	(port
 		(pt 184 96)
 		(output)
 		(text "h" (rect 0 0 5 12)(font "Arial" ))
-		(text "h" (rect 159 91 163 103)(font "Arial" ))
+		(text "h" (rect 159 91 164 103)(font "Arial" ))
 		(line (pt 184 96)(pt 168 96))
 	)
 	(port
 		(pt 184 112)
 		(output)
 		(text "result[15..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "result[15..0]" (rect 114 107 163 119)(font "Arial" ))
+		(text "result[15..0]" (rect 114 107 173 119)(font "Arial" ))
 		(line (pt 184 112)(pt 168 112)(line_width 3))
 	)
 	(drawing
@@ -608,14 +624,14 @@ refer to the applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "dirw[15..0]" (rect 0 0 50 12)(font "Arial" ))
-		(text "dirw[15..0]" (rect 137 27 179 39)(font "Arial" ))
+		(text "dirw[15..0]" (rect 137 27 187 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(port
 		(pt 200 48)
 		(output)
 		(text "datow[15..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "datow[15..0]" (rect 129 43 179 55)(font "Arial" ))
+		(text "datow[15..0]" (rect 129 43 189 55)(font "Arial" ))
 		(line (pt 200 48)(pt 184 48)(line_width 3))
 	)
 	(drawing
@@ -679,42 +695,42 @@ refer to the applicable agreement for further details.
 		(pt 160 32)
 		(output)
 		(text "n" (rect 0 0 5 12)(font "Arial" ))
-		(text "n" (rect 135 27 139 39)(font "Arial" ))
+		(text "n" (rect 135 27 140 39)(font "Arial" ))
 		(line (pt 160 32)(pt 144 32))
 	)
 	(port
 		(pt 160 48)
 		(output)
 		(text "z" (rect 0 0 4 12)(font "Arial" ))
-		(text "z" (rect 136 43 139 55)(font "Arial" ))
+		(text "z" (rect 136 43 140 55)(font "Arial" ))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(port
 		(pt 160 64)
 		(output)
 		(text "v" (rect 0 0 7 12)(font "Arial" ))
-		(text "v" (rect 134 59 139 71)(font "Arial" ))
+		(text "v" (rect 134 59 141 71)(font "Arial" ))
 		(line (pt 160 64)(pt 144 64))
 	)
 	(port
 		(pt 160 80)
 		(output)
 		(text "c" (rect 0 0 5 12)(font "Arial" ))
-		(text "c" (rect 135 75 139 87)(font "Arial" ))
+		(text "c" (rect 135 75 140 87)(font "Arial" ))
 		(line (pt 160 80)(pt 144 80))
 	)
 	(port
 		(pt 160 96)
 		(output)
 		(text "h" (rect 0 0 5 12)(font "Arial" ))
-		(text "h" (rect 135 91 139 103)(font "Arial" ))
+		(text "h" (rect 135 91 140 103)(font "Arial" ))
 		(line (pt 160 96)(pt 144 96))
 	)
 	(port
 		(pt 160 112)
 		(output)
 		(text "i" (rect 0 0 2 12)(font "Arial" ))
-		(text "i" (rect 138 107 139 119)(font "Arial" ))
+		(text "i" (rect 138 107 140 119)(font "Arial" ))
 		(line (pt 160 112)(pt 144 112))
 	)
 	(drawing
@@ -771,7 +787,7 @@ refer to the applicable agreement for further details.
 		(pt 184 32)
 		(output)
 		(text "branch" (rect 0 0 33 12)(font "Arial" ))
-		(text "branch" (rect 136 27 163 39)(font "Arial" ))
+		(text "branch" (rect 136 27 169 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32))
 	)
 	(drawing
@@ -807,7 +823,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -843,7 +859,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -879,7 +895,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -915,7 +931,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -951,7 +967,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -987,7 +1003,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -1023,7 +1039,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "SALIDA" (rect 0 0 40 12)(font "Arial" ))
-		(text "SALIDA" (rect 138 27 171 39)(font "Arial" ))
+		(text "SALIDA" (rect 138 27 178 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -1073,21 +1089,21 @@ refer to the applicable agreement for further details.
 		(pt 208 32)
 		(output)
 		(text "selregwo[2..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "selregwo[2..0]" (rect 130 27 187 39)(font "Arial" ))
+		(text "selregwo[2..0]" (rect 130 27 198 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(port
 		(pt 208 48)
 		(output)
 		(text "memwo" (rect 0 0 37 12)(font "Arial" ))
-		(text "memwo" (rect 156 43 187 55)(font "Arial" ))
+		(text "memwo" (rect 156 43 193 55)(font "Arial" ))
 		(line (pt 208 48)(pt 192 48))
 	)
 	(port
 		(pt 208 64)
 		(output)
 		(text "seldirwo[1..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "seldirwo[1..0]" (rect 133 59 187 71)(font "Arial" ))
+		(text "seldirwo[1..0]" (rect 133 59 197 71)(font "Arial" ))
 		(line (pt 208 64)(pt 192 64)(line_width 3))
 	)
 	(drawing
@@ -1123,7 +1139,7 @@ refer to the applicable agreement for further details.
 		(pt 240 32)
 		(output)
 		(text "SALIDA[15..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "SALIDA[15..0]" (rect 160 27 219 39)(font "Arial" ))
+		(text "SALIDA[15..0]" (rect 160 27 230 39)(font "Arial" ))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(drawing
@@ -1159,24 +1175,144 @@ refer to the applicable agreement for further details.
 		(pt 240 32)
 		(output)
 		(text "SALIDA[15..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "SALIDA[15..0]" (rect 160 27 219 39)(font "Arial" ))
+		(text "SALIDA[15..0]" (rect 160 27 230 39)(font "Arial" ))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 224 96))
 	)
 )
-(connector
-	(pt 400 208)
-	(pt 344 208)
+(symbol
+	(rect -376 184 -184 264)
+	(text "u_anticipacion" (rect 5 0 74 12)(font "Arial" ))
+	(text "inst7" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "SelRegR[3..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "SelRegR[3..0]" (rect 21 27 90 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "SelRegWE4[2..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "SelRegWE4[2..0]" (rect 21 43 105 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "SelA" (rect 0 0 23 12)(font "Arial" ))
+		(text "SelA" (rect 152 27 175 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "SelB" (rect 0 0 22 12)(font "Arial" ))
+		(text "SelB" (rect 153 43 175 55)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 64))
+	)
 )
-(connector
-	(pt 320 272)
-	(pt 344 272)
+(symbol
+	(rect 24 80 136 168)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "inst8" (rect 3 77 25 94)(font "Intel Clear" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"16"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 24 40 144 78))
 )
-(connector
-	(pt 344 208)
-	(pt 344 272)
+(symbol
+	(rect 24 184 136 272)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "inst9" (rect 3 77 25 94)(font "Intel Clear" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"16"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 104 272 224 310))
 )
 (connector
 	(pt 584 240)
@@ -1244,48 +1380,8 @@ refer to the applicable agreement for further details.
 	(pt 632 480)
 )
 (connector
-	(pt 400 160)
-	(pt 256 160)
-	(bus)
-)
-(connector
-	(pt 376 104)
-	(pt 376 176)
-	(bus)
-)
-(connector
-	(pt 400 176)
-	(pt 376 176)
-	(bus)
-)
-(connector
-	(pt 376 176)
-	(pt 256 176)
-	(bus)
-)
-(connector
-	(pt 384 120)
-	(pt 384 192)
-	(bus)
-)
-(connector
-	(pt 400 192)
-	(pt 384 192)
-	(bus)
-)
-(connector
-	(pt 384 192)
-	(pt 256 192)
-	(bus)
-)
-(connector
 	(pt 1176 224)
 	(pt 1304 224)
-	(bus)
-)
-(connector
-	(pt 1176 240)
-	(pt 1256 240)
 	(bus)
 )
 (connector
@@ -1353,11 +1449,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 384 120)
-	(pt 728 120)
-	(bus)
-)
-(connector
 	(pt 976 256)
 	(pt 744 256)
 	(bus)
@@ -1366,19 +1457,6 @@ refer to the applicable agreement for further details.
 	(pt 744 104)
 	(pt 744 256)
 	(bus)
-)
-(connector
-	(pt 376 104)
-	(pt 744 104)
-	(bus)
-)
-(connector
-	(pt -8 288)
-	(pt -8 544)
-)
-(connector
-	(pt 200 288)
-	(pt -8 288)
 )
 (connector
 	(pt 1216 368)
@@ -1608,10 +1686,6 @@ refer to the applicable agreement for further details.
 	(pt 944 480)
 )
 (connector
-	(pt 944 568)
-	(pt 944 480)
-)
-(connector
 	(pt 1304 1008)
 	(pt 976 1008)
 )
@@ -1673,10 +1747,6 @@ refer to the applicable agreement for further details.
 	(pt 1160 128)
 )
 (connector
-	(pt 840 568)
-	(pt 944 568)
-)
-(connector
 	(pt 976 224)
 	(pt 952 224)
 	(bus)
@@ -1695,8 +1765,106 @@ refer to the applicable agreement for further details.
 	(pt 1304 1248)
 	(pt 1288 1248)
 )
-(junction (pt 376 176))
-(junction (pt 384 192))
+(connector
+	(pt 1512 1216)
+	(pt 1568 1216)
+)
+(connector
+	(pt 1512 1232)
+	(pt 1568 1232)
+	(bus)
+)
+(connector
+	(pt 392 192)
+	(pt 392 120)
+	(bus)
+)
+(connector
+	(pt 728 120)
+	(pt 392 120)
+	(bus)
+)
+(connector
+	(pt 384 176)
+	(pt 384 104)
+	(bus)
+)
+(connector
+	(pt 744 104)
+	(pt 384 104)
+	(bus)
+)
+(connector
+	(pt 400 160)
+	(pt 376 160)
+	(bus)
+)
+(connector
+	(pt -8 544)
+	(pt -8 440)
+)
+(connector
+	(pt -8 440)
+	(pt 192 440)
+)
+(connector
+	(pt 400 208)
+	(pt 320 208)
+)
+(connector
+	(pt 312 424)
+	(pt 320 424)
+)
+(connector
+	(pt 320 208)
+	(pt 320 424)
+)
+(connector
+	(pt 192 424)
+	(pt 176 424)
+)
+(connector
+	(pt 192 456)
+	(pt 184 456)
+)
+(connector
+	(pt 944 480)
+	(pt 944 584)
+)
+(connector
+	(pt 944 584)
+	(pt 840 584)
+)
+(connector
+	(pt 1512 1200)
+	(pt 1608 1200)
+	(bus)
+)
+(connector
+	(pt 1176 240)
+	(pt 1256 240)
+	(bus)
+)
+(connector
+	(pt 280 176)
+	(pt 384 176)
+	(bus)
+)
+(connector
+	(pt 384 176)
+	(pt 400 176)
+	(bus)
+)
+(connector
+	(pt 280 192)
+	(pt 392 192)
+	(bus)
+)
+(connector
+	(pt 392 192)
+	(pt 400 192)
+	(bus)
+)
 (junction (pt 1240 160))
 (junction (pt 1296 192))
 (junction (pt 1280 208))
@@ -1721,3 +1889,5 @@ refer to the applicable agreement for further details.
 (junction (pt 1008 384))
 (junction (pt 1296 1088))
 (junction (pt 1280 1104))
+(junction (pt 392 192))
+(junction (pt 384 176))

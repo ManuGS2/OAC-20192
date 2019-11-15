@@ -14,6 +14,7 @@ entity reg_acoplo_3 is
 			selregwi : in STD_LOGIC_VECTOR (2 downto 0);
 			memwi : in STD_LOGIC;
 			seldirwi : in STD_LOGIC_VECTOR (1 downto 0);
+			selregRi: in STD_LOGIC_VECTOR (3 downto 0);
 			selopo : out STD_LOGIC_VECTOR (3 downto 0);
 			selresulto : out STD_LOGIC_VECTOR (1 downto 0);
 			selco : out STD_LOGIC;
@@ -23,7 +24,8 @@ entity reg_acoplo_3 is
 			vfo : out STD_LOGIC;
 			selregwo : out STD_LOGIC_VECTOR (2 downto 0);
 			memwo : out STD_LOGIC;
-			seldirwo : out STD_LOGIC_VECTOR (1 downto 0));
+			seldirwo : out STD_LOGIC_VECTOR (1 downto 0);
+			selregRo: out STD_LOGIC_VECTOR (3 downto 0));
 end reg_acoplo_3;
 
 architecture Behavioral of reg_acoplo_3 is
@@ -39,9 +41,10 @@ signal vf : STD_LOGIC := '1';
 signal selregw : STD_LOGIC_VECTOR (2 downto 0);
 signal memw : STD_LOGIC;
 signal seldirw : STD_LOGIC_VECTOR (1 downto 0);
+signal selregR: STD_LOGIC_VECTOR (3 downto 0);
 
 begin
-	process (RELOJ, RESET, selopi,selresulti,selci,cadji,selfalgsi,selbranchi,vfi,selregwi,memwi,seldirwi)
+	process (RELOJ, RESET, selopi,selresulti,selci,cadji,selfalgsi,selbranchi,vfi,selregwi,memwi,seldirwi,selregRi)
 	begin		
 		if RESET = '0' then 
 			selop <= "0000";
@@ -54,6 +57,7 @@ begin
 			selregw <= "000";
 			memw <= '0';
 			seldirw <= "00";
+			selregR <= x"0";
 		elsif rising_edge (RELOJ) then
 			selop <= selopi;
 			selresult <= selresulti;
@@ -65,10 +69,11 @@ begin
 			selregw <= selregwi;
 			memw <= memwi;
 			seldirw <= seldirwi;
+			selregR <= selregRi;
 		end if;
 	end process;
 	
-	process (selop,selresult,selc,cadj,selfalgs,selbranch,vf,selregw,memw,seldirw)
+	process (selop,selresult,selc,cadj,selfalgs,selbranch,vf,selregw,memw,seldirw,selregR)
 	begin
 		selopo <= selop;
 		selresulto <= selresult;
@@ -80,5 +85,6 @@ begin
 		selregwo <= selregw;
 		memwo <= memw;
 		seldirwo <= seldirw;
+		selregRo <= selregR;
 	end process;
 end Behavioral;
