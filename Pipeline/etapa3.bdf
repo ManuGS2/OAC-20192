@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 200 152 376 168)
+	(rect 176 152 352 168)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "selop[3..0]" (rect 9 0 60 12)(font "Arial" ))
 	(pt 176 8)
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 104 168 280 184)
+	(rect -248 104 -72 120)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "op1[15..0]" (rect 9 0 58 12)(font "Arial" ))
 	(pt 176 8)
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 104 184 280 200)
+	(rect -264 216 -88 232)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "op2[15..0]" (rect 9 0 58 12)(font "Arial" ))
 	(pt 176 8)
@@ -261,7 +261,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -592 208 -424 224)
+	(rect -456 152 -288 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "SelRegR[3..0]" (rect 5 0 74 12)(font "Arial" ))
 	(pt 168 8)
@@ -293,7 +293,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1544 296 1720 312)
+	(rect 1592 296 1768 312)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "datow[15..0]" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
@@ -1183,7 +1183,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -376 184 -184 264)
+	(rect -272 128 -80 208)
 	(text "u_anticipacion" (rect 5 0 74 12)(font "Arial" ))
 	(text "inst7" (rect 8 64 30 81)(font "Intel Clear" ))
 	(port
@@ -1267,7 +1267,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 24 40 144 78))
 )
 (symbol
-	(rect 24 184 136 272)
+	(rect 24 192 136 280)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
 	(text "inst9" (rect 3 77 25 94)(font "Intel Clear" ))
 	(port
@@ -1312,12 +1312,7 @@ refer to the applicable agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 104 272 224 310))
-)
-(connector
-	(pt 584 240)
-	(pt 976 240)
-	(bus)
+	(annotation_block (parameter)(rect 104 280 224 318))
 )
 (connector
 	(pt 584 160)
@@ -1770,36 +1765,6 @@ refer to the applicable agreement for further details.
 	(pt 1568 1216)
 )
 (connector
-	(pt 1512 1232)
-	(pt 1568 1232)
-	(bus)
-)
-(connector
-	(pt 392 192)
-	(pt 392 120)
-	(bus)
-)
-(connector
-	(pt 728 120)
-	(pt 392 120)
-	(bus)
-)
-(connector
-	(pt 384 176)
-	(pt 384 104)
-	(bus)
-)
-(connector
-	(pt 744 104)
-	(pt 384 104)
-	(bus)
-)
-(connector
-	(pt 400 160)
-	(pt 376 160)
-	(bus)
-)
-(connector
 	(pt -8 544)
 	(pt -8 440)
 )
@@ -1836,8 +1801,160 @@ refer to the applicable agreement for further details.
 	(pt 840 584)
 )
 (connector
+	(pt 384 192)
+	(pt 384 120)
+	(bus)
+)
+(connector
+	(pt 728 120)
+	(pt 384 120)
+	(bus)
+)
+(connector
+	(pt 168 192)
+	(pt 384 192)
+	(bus)
+)
+(connector
+	(pt 384 192)
+	(pt 400 192)
+	(bus)
+)
+(connector
+	(pt 352 160)
+	(pt 400 160)
+	(bus)
+)
+(connector
+	(pt 368 176)
+	(pt 368 104)
+	(bus)
+)
+(connector
+	(pt 744 104)
+	(pt 368 104)
+	(bus)
+)
+(connector
+	(pt 168 176)
+	(pt 368 176)
+	(bus)
+)
+(connector
+	(pt 368 176)
+	(pt 400 176)
+	(bus)
+)
+(connector
+	(pt -80 160)
+	(pt -32 160)
+)
+(connector
+	(pt -32 176)
+	(pt -32 160)
+)
+(connector
+	(pt -32 176)
+	(pt 80 176)
+)
+(connector
+	(pt 80 176)
+	(pt 80 168)
+)
+(connector
+	(pt -80 176)
+	(pt -56 176)
+)
+(connector
+	(pt -56 304)
+	(pt -56 176)
+)
+(connector
+	(pt -272 160)
+	(pt -288 160)
+	(bus)
+)
+(connector
+	(pt -272 176)
+	(pt -288 176)
+	(bus)
+)
+(connector
+	(pt -288 176)
+	(pt -288 248)
+	(bus)
+)
+(connector
+	(pt -288 248)
+	(pt -72 248)
+	(bus)
+)
+(connector
+	(pt -72 560)
+	(pt -72 248)
+	(bus)
+)
+(connector
+	(pt 928 560)
+	(pt -72 560)
+	(bus)
+)
+(connector
+	(pt 928 1336)
+	(pt 928 560)
+	(bus)
+)
+(connector
+	(pt 928 1336)
+	(pt 1536 1336)
+	(bus)
+)
+(connector
+	(pt 24 144)
+	(pt -8 144)
+	(bus)
+)
+(connector
+	(pt 1512 1232)
+	(pt 1568 1232)
+	(bus)
+)
+(connector
+	(pt 1536 1336)
+	(pt 1536 1200)
+	(bus)
+)
+(connector
 	(pt 1512 1200)
+	(pt 1536 1200)
+	(bus)
+)
+(connector
+	(pt 1536 1200)
 	(pt 1608 1200)
+	(bus)
+)
+(connector
+	(pt -56 304)
+	(pt 80 304)
+)
+(connector
+	(pt 80 304)
+	(pt 80 280)
+)
+(connector
+	(pt -8 256)
+	(pt 24 256)
+	(bus)
+)
+(connector
+	(pt -8 56)
+	(pt -8 144)
+	(bus)
+)
+(connector
+	(pt -8 144)
+	(pt -8 256)
 	(bus)
 )
 (connector
@@ -1846,23 +1963,58 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 280 176)
-	(pt 384 176)
+	(pt -72 112)
+	(pt 24 112)
 	(bus)
 )
 (connector
-	(pt 384 176)
-	(pt 400 176)
+	(pt -88 224)
+	(pt 24 224)
 	(bus)
 )
 (connector
-	(pt 280 192)
-	(pt 392 192)
+	(pt 168 240)
+	(pt 168 192)
 	(bus)
 )
 (connector
-	(pt 392 192)
-	(pt 400 192)
+	(pt 168 240)
+	(pt 136 240)
+	(bus)
+)
+(connector
+	(pt 168 128)
+	(pt 168 176)
+	(bus)
+)
+(connector
+	(pt 168 128)
+	(pt 136 128)
+	(bus)
+)
+(connector
+	(pt 584 240)
+	(pt 976 240)
+	(bus)
+)
+(connector
+	(pt 1560 56)
+	(pt -8 56)
+	(bus)
+)
+(connector
+	(pt 1560 56)
+	(pt 1560 304)
+	(bus)
+)
+(connector
+	(pt 1544 304)
+	(pt 1560 304)
+	(bus)
+)
+(connector
+	(pt 1560 304)
+	(pt 1592 304)
 	(bus)
 )
 (junction (pt 1240 160))
@@ -1889,5 +2041,8 @@ refer to the applicable agreement for further details.
 (junction (pt 1008 384))
 (junction (pt 1296 1088))
 (junction (pt 1280 1104))
-(junction (pt 392 192))
-(junction (pt 384 176))
+(junction (pt 384 192))
+(junction (pt 368 176))
+(junction (pt -8 144))
+(junction (pt 1536 1200))
+(junction (pt 1560 304))

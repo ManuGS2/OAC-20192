@@ -1540,77 +1540,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 8 1128 224 1272)
-	(text "u_detencion" (rect 5 0 64 12)(font "Arial" ))
-	(text "instdetencion" (rect 8 128 72 140)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "SelRegR[3..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "SelRegR[3..0]" (rect 21 27 90 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "SelRegWE3[2..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "SelRegWE3[2..0]" (rect 21 43 105 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "SelRegWE4[2..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "SelRegWE4[2..0]" (rect 21 59 105 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "SelSrc[2..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "SelSrc[2..0]" (rect 21 75 78 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "MemWE4" (rect 0 0 47 12)(font "Arial" ))
-		(text "MemWE4" (rect 21 91 68 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "PCWrite" (rect 0 0 41 12)(font "Arial" ))
-		(text "PCWrite" (rect 161 27 202 39)(font "Arial" ))
-		(line (pt 216 32)(pt 200 32))
-	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "IFIDWrite" (rect 0 0 48 12)(font "Arial" ))
-		(text "IFIDWrite" (rect 155 43 203 55)(font "Arial" ))
-		(line (pt 216 48)(pt 200 48))
-	)
-	(port
-		(pt 216 64)
-		(output)
-		(text "SelCtrl" (rect 0 0 33 12)(font "Arial" ))
-		(text "SelCtrl" (rect 168 59 201 71)(font "Arial" ))
-		(line (pt 216 64)(pt 200 64))
-	)
-	(port
-		(pt 216 80)
-		(output)
-		(text "SelD" (rect 0 0 23 12)(font "Arial" ))
-		(text "SelD" (rect 176 75 199 87)(font "Arial" ))
-		(line (pt 216 80)(pt 200 80))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 128))
-	)
-)
-(symbol
 	(rect 1944 832 2168 1104)
 	(text "reg_acoplo_3" (rect 5 0 69 12)(font "Arial" ))
 	(text "inst10" (rect 8 256 37 268)(font "Arial" ))
@@ -1863,6 +1792,56 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 160 64))
+	)
+)
+(symbol
+	(rect 32 1128 224 1240)
+	(text "u_detencion" (rect 5 0 64 12)(font "Arial" ))
+	(text "instdetencion" (rect 8 96 72 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "SelSrc[2..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "SelSrc[2..0]" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "MemWE4" (rect 0 0 47 12)(font "Arial" ))
+		(text "MemWE4" (rect 21 43 68 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "PCWrite" (rect 0 0 41 12)(font "Arial" ))
+		(text "PCWrite" (rect 137 27 171 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "IFIDWrite" (rect 0 0 48 12)(font "Arial" ))
+		(text "IFIDWrite" (rect 131 43 171 55)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48))
+	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "SelCtrl" (rect 0 0 33 12)(font "Arial" ))
+		(text "SelCtrl" (rect 144 59 171 71)(font "Arial" ))
+		(line (pt 192 64)(pt 176 64))
+	)
+	(port
+		(pt 192 80)
+		(output)
+		(text "SelD" (rect 0 0 23 12)(font "Arial" ))
+		(text "SelD" (rect 152 75 171 87)(font "Arial" ))
+		(line (pt 192 80)(pt 176 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 96))
 	)
 )
 (connector
@@ -2399,11 +2378,6 @@ refer to the applicable agreement for further details.
 	(pt 1944 992)
 )
 (connector
-	(pt -128 1008)
-	(pt 1944 1008)
-	(bus)
-)
-(connector
 	(pt -128 1024)
 	(pt 1944 1024)
 )
@@ -2415,16 +2389,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -384 768)
 	(pt -352 768)
-)
-(connector
-	(pt -424 784)
-	(pt -408 784)
-	(bus)
-)
-(connector
-	(pt -408 784)
-	(pt -352 784)
-	(bus)
 )
 (connector
 	(pt 1736 536)
@@ -2489,11 +2453,6 @@ refer to the applicable agreement for further details.
 	(pt 208 104)
 )
 (connector
-	(pt -24 768)
-	(pt -24 88)
-	(bus)
-)
-(connector
 	(pt -24 88)
 	(pt 312 88)
 	(bus)
@@ -2531,44 +2490,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -72 152)
-	(pt -72 1192)
-	(bus)
-)
-(connector
-	(pt 288 1192)
-	(pt 224 1192)
-)
-(connector
-	(pt 288 1160)
-	(pt 224 1160)
-)
-(connector
-	(pt -240 152)
-	(pt -72 152)
-	(bus)
-)
-(connector
-	(pt -72 152)
-	(pt 312 152)
-	(bus)
-)
-(connector
-	(pt -408 1160)
-	(pt 8 1160)
-	(bus)
-)
-(connector
-	(pt -56 1176)
-	(pt 8 1176)
-	(bus)
-)
-(connector
-	(pt -72 1192)
-	(pt 8 1192)
-	(bus)
-)
-(connector
 	(pt -384 768)
 	(pt -384 1288)
 )
@@ -2577,68 +2498,8 @@ refer to the applicable agreement for further details.
 	(pt 288 1288)
 )
 (connector
-	(pt 8 1208)
-	(pt -368 1208)
-	(bus)
-)
-(connector
-	(pt -368 1208)
-	(pt -368 880)
-	(bus)
-)
-(connector
-	(pt -424 880)
-	(pt -368 880)
-	(bus)
-)
-(connector
-	(pt -368 880)
-	(pt -352 880)
-	(bus)
-)
-(connector
-	(pt 2184 976)
-	(pt 2184 1088)
-	(bus)
-)
-(connector
-	(pt 2184 1088)
-	(pt -56 1088)
-	(bus)
-)
-(connector
-	(pt -56 1176)
-	(pt -56 1088)
-	(bus)
-)
-(connector
-	(pt 2168 976)
-	(pt 2184 976)
-	(bus)
-)
-(connector
-	(pt 2184 976)
-	(pt 2200 976)
-	(bus)
-)
-(connector
-	(pt 1872 1120)
-	(pt -408 1120)
-	(bus)
-)
-(connector
 	(pt 1872 1120)
 	(pt 1872 1056)
-	(bus)
-)
-(connector
-	(pt -408 784)
-	(pt -408 1120)
-	(bus)
-)
-(connector
-	(pt -408 1120)
-	(pt -408 1160)
 	(bus)
 )
 (connector
@@ -2726,10 +2587,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 224 1176)
-	(pt 288 1176)
-)
-(connector
 	(pt 1360 584)
 	(pt 1360 864)
 	(bus)
@@ -2764,68 +2621,12 @@ refer to the applicable agreement for further details.
 	(pt 648 1336)
 )
 (connector
-	(pt 648 1336)
-	(pt 648 1208)
-)
-(connector
-	(pt 224 1208)
-	(pt 648 1208)
-)
-(connector
 	(pt 1512 1360)
 	(pt 704 1360)
 	(bus)
 )
 (connector
-	(pt -112 880)
-	(pt 704 880)
-	(bus)
-)
-(connector
-	(pt -112 880)
-	(pt -112 1136)
-	(bus)
-)
-(connector
-	(pt 704 760)
-	(pt 704 880)
-	(bus)
-)
-(connector
-	(pt 704 880)
-	(pt 704 1360)
-	(bus)
-)
-(connector
-	(pt -400 1136)
-	(pt -112 1136)
-	(bus)
-)
-(connector
-	(pt -400 896)
-	(pt -400 1136)
-	(bus)
-)
-(connector
-	(pt -424 896)
-	(pt -400 896)
-	(bus)
-)
-(connector
-	(pt -400 896)
-	(pt -352 896)
-	(bus)
-)
-(connector
 	(pt 1520 1376)
-	(pt 288 1376)
-)
-(connector
-	(pt 288 1192)
-	(pt 288 1288)
-)
-(connector
-	(pt 288 1288)
 	(pt 288 1376)
 )
 (connector
@@ -2841,14 +2642,6 @@ refer to the applicable agreement for further details.
 	(pt 1216 496)
 )
 (connector
-	(pt 8 1224)
-	(pt -8 1224)
-)
-(connector
-	(pt -8 1224)
-	(pt -8 1280)
-)
-(connector
 	(pt 1216 360)
 	(pt 1216 496)
 )
@@ -2859,6 +2652,117 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -8 1280)
 	(pt 1216 1280)
+)
+(connector
+	(pt -240 152)
+	(pt 312 152)
+	(bus)
+)
+(connector
+	(pt 2168 976)
+	(pt 2200 976)
+	(bus)
+)
+(connector
+	(pt 648 1336)
+	(pt 648 1208)
+)
+(connector
+	(pt -368 880)
+	(pt -368 1160)
+	(bus)
+)
+(connector
+	(pt -8 1280)
+	(pt -8 1176)
+)
+(connector
+	(pt 288 1160)
+	(pt 224 1160)
+)
+(connector
+	(pt 288 1176)
+	(pt 224 1176)
+)
+(connector
+	(pt 288 1192)
+	(pt 224 1192)
+)
+(connector
+	(pt 648 1208)
+	(pt 224 1208)
+)
+(connector
+	(pt -424 880)
+	(pt -368 880)
+	(bus)
+)
+(connector
+	(pt -368 880)
+	(pt -352 880)
+	(bus)
+)
+(connector
+	(pt 288 1192)
+	(pt 288 1288)
+)
+(connector
+	(pt 288 1288)
+	(pt 288 1376)
+)
+(connector
+	(pt -368 1160)
+	(pt 32 1160)
+	(bus)
+)
+(connector
+	(pt -8 1176)
+	(pt 32 1176)
+)
+(connector
+	(pt -128 1008)
+	(pt 1944 1008)
+	(bus)
+)
+(connector
+	(pt -424 784)
+	(pt -352 784)
+	(bus)
+)
+(connector
+	(pt -24 1120)
+	(pt 1872 1120)
+	(bus)
+)
+(connector
+	(pt -24 88)
+	(pt -24 768)
+	(bus)
+)
+(connector
+	(pt -24 768)
+	(pt -24 1120)
+	(bus)
+)
+(connector
+	(pt -424 896)
+	(pt -352 896)
+	(bus)
+)
+(connector
+	(pt -128 880)
+	(pt 704 880)
+	(bus)
+)
+(connector
+	(pt 704 760)
+	(pt 704 880)
+	(bus)
+)
+(connector
+	(pt 704 880)
+	(pt 704 1360)
+	(bus)
 )
 (junction (pt 1176 328))
 (junction (pt 368 480))
@@ -2873,12 +2777,8 @@ refer to the applicable agreement for further details.
 (junction (pt 248 120))
 (junction (pt 240 136))
 (junction (pt 1888 224))
-(junction (pt 2184 976))
-(junction (pt -408 784))
-(junction (pt -72 152))
 (junction (pt -368 880))
-(junction (pt -408 1120))
 (junction (pt 704 880))
-(junction (pt -400 896))
 (junction (pt 288 1288))
 (junction (pt 1216 496))
+(junction (pt -24 768))

@@ -48,7 +48,7 @@ architecture Behavioral of memoria_inst is
 		memoria(0) <= x"00860000"; -- LDAA 00
 		memoria(1) <= x"00B70000"; -- STAA #0002 (SUMA)
 		memoria(2) <= x"00C60001"; -- LDAB 01		
-		memoria(3) <= x"00860001"; -- LDAA 03 (n)
+		memoria(3) <= x"00860002"; -- LDAA 03 (n)
 		memoria(4) <= x"00110000"; -- CBA 
 		memoria(5) <= x"00270014"; -- JB #0014 (si se cumple salta al final x"14"=20)
 		memoria(6) <= x"00010000"; -- NOP
