@@ -149,7 +149,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 976 496 1152 512)
+	(rect 976 488 1152 504)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "memW" (rect 9 0 44 12)(font "Arial" ))
 	(pt 176 8)
@@ -2630,18 +2630,6 @@ refer to the applicable agreement for further details.
 	(pt 288 1376)
 )
 (connector
-	(pt 1160 504)
-	(pt 1160 496)
-)
-(connector
-	(pt 1152 504)
-	(pt 1160 504)
-)
-(connector
-	(pt 1160 496)
-	(pt 1216 496)
-)
-(connector
 	(pt 1216 360)
 	(pt 1216 496)
 )
@@ -2763,6 +2751,10 @@ refer to the applicable agreement for further details.
 	(pt 704 880)
 	(pt 704 1360)
 	(bus)
+)
+(connector
+	(pt 1152 496)
+	(pt 1216 496)
 )
 (junction (pt 1176 328))
 (junction (pt 368 480))

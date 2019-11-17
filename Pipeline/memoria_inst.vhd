@@ -48,13 +48,13 @@ architecture Behavioral of memoria_inst is
 		memoria(0) <= x"00860000"; -- LDAA 00
 		memoria(1) <= x"00B70000"; -- STAA #0002 (SUMA)
 		memoria(2) <= x"00C60001"; -- LDAB 01		
-		memoria(3) <= x"00860002"; -- LDAA 03 (n)
+		memoria(3) <= x"00860005"; -- LDAA 03 (n)
 		memoria(4) <= x"00110000"; -- CBA 
-		memoria(5) <= x"00270014"; -- JB #0014 (si se cumple salta al final x"14"=20)
+		memoria(5) <= x"00270013"; -- JB #0014 (si se cumple salta al final x"14"=20)
 		memoria(6) <= x"00010000"; -- NOP
 		memoria(7) <= x"00010000"; -- NOP
 		memoria(8) <= x"00010000"; -- NOP
-		memoria(9) <= x"00960000"; -- LDAA #0002
+		memoria(9) <= x"00960000"; -- LDAA #0000 acceso directo a memoria
 		memoria(10) <= x"001B0000"; -- ABA
 		memoria(11) <= x"005c0000"; -- INCB
 		memoria(12) <= x"00B70000"; -- STAA #0002 (SUMA)
@@ -64,6 +64,7 @@ architecture Behavioral of memoria_inst is
 		memoria(16) <= x"00010000"; -- NOP
 		
 		
+		memoria(19) <= x"00B70000"; -- STAA #0002 (SUMA)
 		memoria(20) <= x"00D70001"; -- STAB #0003 (i)		
 		memoria(21) <= x"00C60002"; -- LDAB #0002
 		memoria(22) <= x"00860000"; -- LDAA #0000

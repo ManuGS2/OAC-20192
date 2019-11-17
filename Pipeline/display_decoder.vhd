@@ -3,9 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
 entity display_decoder is
     Port ( 
-			  clk, reset, sw: in STD_LOGIC;
+			  clk, reset : in STD_LOGIC;
+			  sw  :  in std_logic_vector(1 downto 0);
            AccA : in std_logic_vector(15 downto 0);
 			  AccB : in std_logic_vector(15 downto 0);
+			  suma : in std_logic_vector(15 downto 0);
+			  ival : in std_logic_vector(15 downto 0);
            first_digit : out STD_LOGIC_VECTOR (6 downto 0);
 			  second_digit : out STD_LOGIC_VECTOR (6 downto 0);
 			  third_digit : out STD_LOGIC_VECTOR (6 downto 0);
@@ -29,16 +32,26 @@ begin
 			  third_value <= (others => '0');
 			  fourth_value <= (others => '0');
 		 elsif(rising_edge(clk)) then
-			if sw = '1' then
+			if sw = "01" then
 			  first_value <= AccB(3 downto 0);
 			  second_value <= AccB(7 downto 4);
 			  third_value <= AccB(11 downto 8);
 			  fourth_value <= AccB(15 downto 12);
-			else
+			elsif sw = "00" then
 				first_value <= AccA(3 downto 0);
 			  second_value <= AccA(7 downto 4);
 			  third_value <= AccA(11 downto 8);
 			  fourth_value <= AccA(15 downto 12);
+			elsif sw = "10" then
+				first_value <= suma(3 downto 0);
+			  second_value <= suma(7 downto 4);
+			  third_value <= suma(11 downto 8);
+			  fourth_value <= suma(15 downto 12);
+			elsif sw = "11" then
+				first_value <= ival(3 downto 0);
+			  second_value <= ival(7 downto 4);
+			  third_value <= ival(11 downto 8);
+			  fourth_value <= ival(15 downto 12);
 			end if;
 		 end if;
 	end process;
@@ -56,7 +69,7 @@ begin
 			 when "0111" => first_digit <= "0001111"; -- "7" 
 			 when "1000" => first_digit <= "0000000"; -- "8"     
 			 when "1001" => first_digit <= "0000100"; -- "9" 
-			 when "1010" => first_digit <= "0000010"; -- a
+			 when "1010" => first_digit <= "0001000"; -- a
 
 			 when "1011" => first_digit <= "1100000"; -- b
 			 when "1100" => first_digit <= "0110001"; -- C
@@ -76,7 +89,7 @@ begin
 			 when "0111" => second_digit <= "0001111"; -- "7" 
 			 when "1000" => second_digit <= "0000000"; -- "8"     
 			 when "1001" => second_digit <= "0000100"; -- "9" 
-			 when "1010" => second_digit <= "0000010"; -- a
+			 when "1010" => second_digit <= "0001000"; -- a
 
 			 when "1011" => second_digit <= "1100000"; -- b
 			 when "1100" => second_digit <= "0110001"; -- C
@@ -96,7 +109,7 @@ begin
 			 when "0111" => third_digit <= "0001111"; -- "7" 
 			 when "1000" => third_digit <= "0000000"; -- "8"     
 			 when "1001" => third_digit <= "0000100"; -- "9" 
-			 when "1010" => third_digit <= "0000010"; -- a
+			 when "1010" => third_digit <= "0001000"; -- a
 
 			 when "1011" => third_digit <= "1100000"; -- b
 			 when "1100" => third_digit <= "0110001"; -- C
@@ -116,7 +129,7 @@ begin
 			 when "0111" => fourth_digit <= "0001111"; -- "7" 
 			 when "1000" => fourth_digit <= "0000000"; -- "8"     
 			 when "1001" => fourth_digit <= "0000100"; -- "9" 
-			 when "1010" => fourth_digit <= "0000010"; -- a
+			 when "1010" => fourth_digit <= "0001000"; -- a
 
 			 when "1011" => fourth_digit <= "1100000"; -- b
 			 when "1100" => fourth_digit <= "0110001"; -- C
