@@ -88,6 +88,106 @@ begin
 			selregw <= "100";
 			memw <= '0';
 			seldirw <= "00";
+		
+		elsif inst = X"0096" then -- LDAA acceso directo a memoria
+			selregr <= X"0";
+			sels1 <= '0';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "010";
+			seldir <= "01";
+			selop <= X"4";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '0';
+			selfalgs <= X"1";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "001";
+			memw <= '0';
+			seldirw <= "00";
+			
+		elsif inst = X"00B7" then -- STAA
+			selregr <= X"4";
+			sels1 <= '1';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "001";
+			seldir <= "00";
+			selop <= X"4";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '0';
+			selfalgs <= X"1";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "000";
+			memw <= '1';
+			seldirw <= "10";
+		
+		elsif inst = X"00D7" then -- STAB
+			selregr <= X"5";
+			sels1 <= '1';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "001";
+			seldir <= "00";
+			selop <= X"4";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '0';
+			selfalgs <= X"1";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "000";
+			memw <= '1';
+			seldirw <= "10";
+			
+		elsif inst = X"005C" then -- INCB
+			selregr <= X"5";
+			sels1 <= '0';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "001";
+			seldir <= "00";
+			selop <= X"1";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '1';
+			selfalgs <= X"C";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "100";
+			memw <= '0';
+			seldirw <= "00";
+		
+		elsif inst = X"0011" then -- CBA #direccion(16 bits)
+			selregr <= X"1"; -- D1 y D2
+			sels1 <= '0';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1'; -- D5 = inst[15:0]
+			selsrc <= "001"; -- OP1=D1 y OP2=D2
+			seldir <= "00"; -- D3 = 0
+			selop <= X"2";   -- resultUPA = OP1 - OP2
+			selresult <= "00"; -- datow = ResultUPA, dirw=d3
+			selc <= '1';  -- Accarreo = Cadj
+			cadj <= '1';
+			selfalgs <= X"3"; -- Actualiza banderas
+			selbranch <= "000";  -- branch <= vf xnor '0';
+			vf <= '1'; -- Queremos que branch = '1' para que tome la sig dir sea datoW	
+			selregw <= "000"; -- No se escribe en ningun registro 
+			memw <= '0';
+			seldirw <= "00";
 			
 		elsif inst = X"007E" then -- JMP #direccion(16 bits)
 			selregr <= X"0"; -- D1 y D2 = x"0000"
@@ -109,23 +209,23 @@ begin
 			memw <= '0';
 			seldirw <= "00";
 			
-		elsif inst = X"005C" then -- INCB
-			selregr <= X"5";
+		elsif inst = X"0027" then -- JB (Jump if below)
+			selregr <= X"0"; -- D1 y D2 = x"0000"
 			sels1 <= '0';
-			sr <= '1';
+			sr <= '0';
 			cin <= '0';
 			sels2 <= '0';
-			seldato <= '1';
-			selsrc <= "001";
-			seldir <= "00";
-			selop <= X"1";
-			selresult <= "01";
-			selc <= '1';
-			cadj <= '1';
-			selfalgs <= X"C";
-			selbranch <= "000";
-			vf <= '1';
-			selregw <= "100";
+			seldato <= '1'; -- D5 = inst[15:0]
+			selsrc <= "011"; -- OP1=D1 y OP2=D5
+			seldir <= "00"; -- D3 = 0
+			selop <= X"4";   -- resultUPA = OP1 or OP2
+			selresult <= "01"; -- datow = ResultUPA, dirw=d3
+			selc <= '0';  -- Accarreo = Cadj
+			cadj <= '0';
+			selfalgs <= X"0"; -- No hace nada con las banderas
+			selbranch <= "110";  -- branch <= vf xnor N;
+			vf <= '1'; -- Queremos que branch = '1' para que tome la sig dir sea datoW	
+			selregw <= "000"; -- No se escribe en ningun registro 
 			memw <= '0';
 			seldirw <= "00";
 			

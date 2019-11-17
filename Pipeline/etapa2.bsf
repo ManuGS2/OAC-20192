@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 248 432)
+	(rect 16 16 248 496)
 	(text "etapa2" (rect 5 0 47 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 395 24 412)(font "Intel Clear" ))
+	(text "inst" (rect 8 459 24 476)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -254,7 +254,42 @@ refer to the applicable agreement for further details.
 		(text "ifidwrite" (rect 162 363 211 382)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 368)(pt 216 368))
 	)
+	(port
+		(pt 232 384)
+		(output)
+		(text "suma[15..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
+		(text "suma[15..0]" (rect 141 379 211 398)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 384)(pt 216 384)(line_width 3))
+	)
+	(port
+		(pt 232 400)
+		(output)
+		(text "i_val[15..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "i_val[15..0]" (rect 144 395 211 414)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 400)(pt 216 400)(line_width 3))
+	)
+	(port
+		(pt 232 416)
+		(output)
+		(text "seld" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
+		(text "seld" (rect 187 411 211 430)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 416)(pt 216 416))
+	)
+	(port
+		(pt 232 432)
+		(output)
+		(text "seldirctl[1..0]" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "seldirctl[1..0]" (rect 134 427 211 446)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 432)(pt 216 432)(line_width 3))
+	)
+	(port
+		(pt 232 448)
+		(output)
+		(text "selctl" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "selctl" (rect 181 443 211 462)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 448)(pt 216 448))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 400))
+		(rectangle (rect 16 16 216 464))
 	)
 )

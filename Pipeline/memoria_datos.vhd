@@ -9,7 +9,9 @@ entity memoria_datos is
 	Port( direccion : in STD_LOGIC_VECTOR (15 downto 0);
 	      datoW : in STD_LOGIC_VECTOR (15 downto 0);
 			memW : in STD_LOGIC;
-			datos : out STD_LOGIC_VECTOR (15 downto 0));
+			datos : out STD_LOGIC_VECTOR (15 downto 0);
+			suma	: out STD_LOGIC_VECTOR (15 downto 0);
+			i_val : out STD_LOGIC_VECTOR (15 downto 0));
 end memoria_datos;
 
 architecture Behavioral of memoria_datos is
@@ -36,4 +38,6 @@ architecture Behavioral of memoria_datos is
 				memoria(conv_integer(unsigned(direccion))) <= datoW;
 			end if;
 		end process;
+		suma <= memoria(0);
+		i_val <= memoria(1);
 end Behavioral;
