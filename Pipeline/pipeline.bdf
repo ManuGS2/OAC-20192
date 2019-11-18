@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 960 -8 1128 8)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "sw[1..0]" (rect 5 0 44 12)(font "Arial" ))
+	(text "sw[1..0]" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -484,7 +484,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -112 88 -32 216)
+	(rect -112 96 -32 224)
 	(text "divisor" (rect 68 5 80 38)(font "Arial" )(vertical))
 	(text "inst5" (rect 4 8 16 31)(font "Arial" )(vertical))
 	(port
@@ -1201,28 +1201,28 @@ refer to the applicable agreement for further details.
 		(pt 216 32)
 		(output)
 		(text "first_digit[6..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "first_digit[6..0]" (rect 135 27 195 39)(font "Arial" ))
+		(text "first_digit[6..0]" (rect 135 27 206 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(port
 		(pt 216 48)
 		(output)
 		(text "second_digit[6..0]" (rect 0 0 87 12)(font "Arial" ))
-		(text "second_digit[6..0]" (rect 122 43 195 55)(font "Arial" ))
+		(text "second_digit[6..0]" (rect 122 43 209 55)(font "Arial" ))
 		(line (pt 216 48)(pt 200 48)(line_width 3))
 	)
 	(port
 		(pt 216 64)
 		(output)
 		(text "third_digit[6..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "third_digit[6..0]" (rect 134 59 195 71)(font "Arial" ))
+		(text "third_digit[6..0]" (rect 134 59 207 71)(font "Arial" ))
 		(line (pt 216 64)(pt 200 64)(line_width 3))
 	)
 	(port
 		(pt 216 80)
 		(output)
 		(text "fourth_digit[6..0]" (rect 0 0 81 12)(font "Arial" ))
-		(text "fourth_digit[6..0]" (rect 127 75 195 87)(font "Arial" ))
+		(text "fourth_digit[6..0]" (rect 127 75 208 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(drawing
@@ -1907,26 +1907,6 @@ refer to the applicable agreement for further details.
 	(pt 1568 784)
 )
 (connector
-	(pt -64 64)
-	(pt -64 88)
-)
-(connector
-	(pt -64 248)
-	(pt -64 344)
-)
-(connector
-	(pt -64 64)
-	(pt 72 64)
-)
-(connector
-	(pt 72 64)
-	(pt 320 64)
-)
-(connector
-	(pt -64 216)
-	(pt -64 248)
-)
-(connector
 	(pt 616 -16)
 	(pt 1152 -16)
 )
@@ -2069,6 +2049,26 @@ refer to the applicable agreement for further details.
 	(pt 1072 632)
 	(pt 1088 632)
 	(bus)
+)
+(connector
+	(pt -64 224)
+	(pt -64 248)
+)
+(connector
+	(pt -64 248)
+	(pt -64 344)
+)
+(connector
+	(pt -64 64)
+	(pt 72 64)
+)
+(connector
+	(pt 72 64)
+	(pt 320 64)
+)
+(connector
+	(pt -64 64)
+	(pt -64 96)
 )
 (junction (pt 184 360))
 (junction (pt 704 128))

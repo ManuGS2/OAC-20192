@@ -373,7 +373,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1496 856 1672 872)
+	(rect 1552 856 1728 872)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "c" (rect 90 0 95 12)(font "Arial" ))
 	(pt 0 8)
@@ -1593,28 +1593,12 @@ refer to the applicable agreement for further details.
 	(pt 1280 992)
 )
 (connector
-	(pt 920 432)
-	(pt 920 544)
-)
-(connector
-	(pt -8 544)
-	(pt 920 544)
-)
-(connector
-	(pt 904 432)
-	(pt 920 432)
-)
-(connector
 	(pt 1304 896)
 	(pt 984 896)
 )
 (connector
 	(pt 984 432)
 	(pt 984 896)
-)
-(connector
-	(pt 920 432)
-	(pt 984 432)
 )
 (connector
 	(pt 984 432)
@@ -1763,10 +1747,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1512 1216)
 	(pt 1568 1216)
-)
-(connector
-	(pt -8 544)
-	(pt -8 440)
 )
 (connector
 	(pt -8 440)
@@ -2017,6 +1997,30 @@ refer to the applicable agreement for further details.
 	(pt 1592 304)
 	(bus)
 )
+(connector
+	(pt 904 432)
+	(pt 984 432)
+)
+(connector
+	(pt -8 440)
+	(pt -8 552)
+)
+(connector
+	(pt 1504 552)
+	(pt -8 552)
+)
+(connector
+	(pt 1504 552)
+	(pt 1504 864)
+)
+(connector
+	(pt 1496 864)
+	(pt 1504 864)
+)
+(connector
+	(pt 1504 864)
+	(pt 1552 864)
+)
 (junction (pt 1240 160))
 (junction (pt 1296 192))
 (junction (pt 1280 208))
@@ -2034,7 +2038,6 @@ refer to the applicable agreement for further details.
 (junction (pt 1280 768))
 (junction (pt 1280 880))
 (junction (pt 1280 992))
-(junction (pt 920 432))
 (junction (pt 984 432))
 (junction (pt 992 416))
 (junction (pt 1000 400))
@@ -2046,3 +2049,4 @@ refer to the applicable agreement for further details.
 (junction (pt -8 144))
 (junction (pt 1536 1200))
 (junction (pt 1560 304))
+(junction (pt 1504 864))

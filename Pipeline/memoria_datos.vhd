@@ -38,6 +38,6 @@ architecture Behavioral of memoria_datos is
 				memoria(conv_integer(unsigned(direccion))) <= datoW;
 			end if;
 		end process;
-		suma <= memoria(0);
-		i_val <= memoria(1);
+		suma <= memoria(8);
+		i_val <= memoria(9);
 end Behavioral;
