@@ -56,9 +56,9 @@ architecture Behavioral of memoria_inst is
 		memoria(0) <= x"00860000"; -- LDAA 00
 		memoria(1) <= x"00B70008"; -- STAA #0002 (SUMA)
 		memoria(2) <= x"00C60001"; -- LDAB 01		
-		memoria(3) <= x"00860002"; -- LDAA 03 (n)
+		memoria(3) <= x"00860004"; -- LDAA 03 (n)
 		memoria(4) <= x"00110000"; -- CBA 
-		memoria(5) <= x"00270014"; -- JB #0014 (si se cumple salta al final x"14"=20)
+		memoria(5) <= x"00270013"; -- JB #0014 (si se cumple salta al final x"14"=20)
 		memoria(6) <= x"00010000"; -- NOP
 		memoria(7) <= x"00010000"; -- NOP
 		memoria(8) <= x"00010000"; -- NOP
@@ -71,16 +71,36 @@ architecture Behavioral of memoria_inst is
 		memoria(15) <= x"00010000"; -- NOP
 		memoria(16) <= x"00010000"; -- NOP
 		
-		
-		memoria(19) <= x"00B70008"; -- STAA #0002 (SUMA)
-		memoria(20) <= x"00D70009"; -- STAB #0003 (i)		
-		memoria(21) <= x"00C60002"; -- LDAB #0002
-		memoria(22) <= x"00860000"; -- LDAA #0000
+		memoria(19) <= x"00860000"; -- LDAA #0000 acceso directo a memoria
+		memoria(20) <= x"001B0000"; -- ABA
+		memoria(21) <= x"001B0000"; -- INCB
+		memoria(22) <= x"00D70009"; -- STAB #0009 (i)
 		memoria(23) <= x"001B0000"; -- ABA A <= A+B
-		memoria(24) <= x"007E0017"; -- JMP al x"03"
+		memoria(24) <= x"007E0017"; -- JMP al x"17"
 		memoria(25) <= x"00010000"; -- NOP
 		memoria(26) <= x"00010000"; -- NOP
 		memoria(27) <= x"00010000"; -- NOP
+		
+		-- Este es el que jala
+--		memoria(19) <= x"00960008"; -- LDAA #0000 acceso directo a memoria
+--		memoria(20) <= x"001B0000"; -- ABA
+--		memoria(21) <= x"005c0000"; -- INCB
+--		memoria(22) <= x"00D70009"; -- STAB #0009 (i)
+--		memoria(23) <= x"001B0000"; -- ABA A <= A+B
+--		memoria(24) <= x"007E0017"; -- JMP al x"17"
+--		memoria(25) <= x"00010000"; -- NOP
+--		memoria(26) <= x"00010000"; -- NOP
+--		memoria(27) <= x"00010000"; -- NOP
+		
+--		memoria(19) <= x"00B70008"; -- STAA #0002 (SUMA)
+--		memoria(20) <= x"00D70009"; -- STAB #0003 (i)		
+--		memoria(21) <= x"00C60002"; -- LDAB #0002
+--		memoria(22) <= x"00860000"; -- LDAA #0000
+--		memoria(23) <= x"001B0000"; -- ABA A <= A+B
+--		memoria(24) <= x"007E0017"; -- JMP al x"03"
+--		memoria(25) <= x"00010000"; -- NOP
+--		memoria(26) <= x"00010000"; -- NOP
+--		memoria(27) <= x"00010000"; -- NOP
 		
 		-- Funcion de la memoria
 		process(direccion)

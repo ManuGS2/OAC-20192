@@ -484,7 +484,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -112 96 -32 224)
+	(rect -160 88 -80 216)
 	(text "divisor" (rect 68 5 80 38)(font "Arial" )(vertical))
 	(text "inst5" (rect 4 8 16 31)(font "Arial" )(vertical))
 	(port
@@ -2051,14 +2051,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -64 224)
-	(pt -64 248)
-)
-(connector
-	(pt -64 248)
-	(pt -64 344)
-)
-(connector
 	(pt -64 64)
 	(pt 72 64)
 )
@@ -2067,8 +2059,12 @@ refer to the applicable agreement for further details.
 	(pt 320 64)
 )
 (connector
+	(pt -64 248)
+	(pt -64 344)
+)
+(connector
 	(pt -64 64)
-	(pt -64 96)
+	(pt -64 248)
 )
 (junction (pt 184 360))
 (junction (pt 704 128))
